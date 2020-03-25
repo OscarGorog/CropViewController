@@ -27,7 +27,6 @@ let package = Package(
                 "Categories",
                 "Constants",
                 "Models",
-                "Resources",
                 "Supporting",
                 "Views",
             ],

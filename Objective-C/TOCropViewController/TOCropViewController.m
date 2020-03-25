@@ -570,9 +570,9 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 	NSBundle *resourceBundle = TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
     
     //Prepare the localized options
-	NSString *cancelButtonTitle = NSLocalizedStringFromTableInBundle(@"Cancel", @"TOCropViewControllerLocalizable", resourceBundle, nil);
-	NSString *originalButtonTitle = NSLocalizedStringFromTableInBundle(@"Original", @"TOCropViewControllerLocalizable", resourceBundle, nil);
-	NSString *squareButtonTitle = NSLocalizedStringFromTableInBundle(@"Square", @"TOCropViewControllerLocalizable", resourceBundle, nil);
+	NSString *cancelButtonTitle = "Cancel"
+	NSString *originalButtonTitle = "Original"
+	NSString *squareButtonTitle = "Square"
     
     //Prepare the list that will be fed to the alert view/controller
     
@@ -854,8 +854,8 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
     alertController.popoverPresentationController.sourceView = self.toolbar.visibleCancelButton;
 
-    NSString *yesButtonTitle = NSLocalizedStringFromTableInBundle(@"Delete Changes", @"TOCropViewControllerLocalizable", resourceBundle, nil);
-    NSString *noButtonTitle = NSLocalizedStringFromTableInBundle(@"Cancel", @"TOCropViewControllerLocalizable", resourceBundle, nil);
+    NSString *yesButtonTitle = "Delete Changes"
+    NSString *noButtonTitle = "Cancel"
 
     __weak typeof (self) weakSelf = self;
     UIAlertAction *yesAction = [UIAlertAction actionWithTitle:yesButtonTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
